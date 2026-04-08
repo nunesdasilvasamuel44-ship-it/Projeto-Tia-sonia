@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 
 * {
@@ -16,37 +15,103 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
+    height: 110px;
+    width: 95%;
+    margin: auto;
 }
 
 ul {
-    width: 40%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    gap: 50px;
+    margin-right: 50px;
     list-style: none;
-          
-} 
+}
 
-a{
-text-decoration: none;
-color: white;
-font-family: Allerta Stencil, sans-serif;
-font-size: 20px;
-border: 2px solid #ffff;
-padding: 20px; 
-border-radius: 0px 20px;
-} 
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Allerta Stencil, sans-serif;
+    font-size: 20px;
+    border: 2px solid #ffff;
+    padding: 10px;
+    border-radius: 0px 20px;
+}
 
-a:hover{
-background-color: #ffff;
-color: #3B929C;
+a:hover {
+    background-color: #ffff;
+    color: #3B929C;
 }
 
 .icones {
-padding: 10px 50px;
-} 
-
-.Logo{
-border-radius: px;  
+    padding: 10px 50px;
 }
+
+.Logo {
+    border-radius: 200px;
+    border: #ffff;
+    border-style: solid;
+}
+
+#banner {
+    width: 12++++00px;
+}
+
+#banner__imagem {
+    width: 1200px;
+    margin-top: 20px;
+}
+
+#reservas {
+    width: 1200px;
+    height: 144px;
+    border: 2px dashed cadetblue;
+    color: #3B929C;
+    text-align: center;
+    font-size: 25px;
+    font-family: Allerta Stencil, sans-serif;
+    margin-top: 10px;
+}
+
+
+.Area-banenr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#reservas__botao {
+    padding: 20px 60px;
+    color: #ffff;
+    background-color: #3B929C;
+    font-size: 22 px;
+    font-family: Allerta Stencil, sans-serif;
+    border-radius: 20px;
+    border: none;
+}
+
+#reservas__titulo {
+    margin-top: 15px;
+}
+
+.Sobre__Titulo {
+    color: #3B929C;
+    font-size: 50px;
+
+}
+
+.Sobre__texto {
+    color: #3B929C;
+    font-size: 18px;
+    text-align: center;
+    font-family: Allerta Stencil, sans-serif;
+}
+
+.Area-sobre {
+    display: flex;
+    width: 1200px;
+    margin: 20px auto;
+    justify-content: space-around;
+    gap: 20px;
+}
+
