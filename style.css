@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Allerta Stencil, sans-serif;
 }
 
 header {
@@ -54,7 +55,7 @@ a:hover {
 }
 
 #banner {
-    width: 12++++00px;
+    width: 1200px;
 }
 
 #banner__imagem {
@@ -97,15 +98,21 @@ a:hover {
 .Sobre__Titulo {
     color: #3B929C;
     font-size: 50px;
-
+    text-align: center;
 }
 
 .Sobre__texto {
     color: #3B929C;
-    font-size: 18px;
-    text-align: center;
+    font-size: 20px;
     font-family: Allerta Stencil, sans-serif;
 }
+
+.Sobre__foto {
+    border-radius: 40px;
+}
+
+
+
 
 .Area-sobre {
     display: flex;
@@ -115,3 +122,74 @@ a:hover {
     gap: 20px;
 }
 
+
+.Rodape {
+    background-color: #3B929C;
+    height: 130px;
+    margin-top: 500px;
+}
+
+.texto__Rodape {
+    color: #ffff;
+    margin: auto;
+    font-family: Allerta Stencil, sans-serif;
+}
+
+.area-busca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.busca {
+    display: flex;
+    width: 764px;
+    height: 40px;
+    border: 5px solid #3B929C;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.busca__campo {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: Allerta Stencil, sans-serif;
+}
+
+.busca__botao {
+    border: none;
+    font-size: 30px;
+    background: transparent;
+    color: #3B929C;
+}
+
+.catalogo__titulo {
+    font-size: 50px;
+    color: #3B929C;
+    margin-bottom: 50px;
+}
+
+.Catalagos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 100px;
+    width: 1400px;
+}
+
+.Bordado {
+    display: flex;
+    justify-content: center;
+    margin-top: 190px;
+    flex-direction: column;
+    width: 300px;
+    font-size: 40px;
+}
+
+.Bordado>a>img {
+    border-radius: 40px;
+    width: 300px;
+} 
