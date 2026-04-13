@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 
+:rooT {
+    --cor-principal: #3B929C;
+    --branco-segundario: #FFFF;
+    --rosa-salmao: #e788e7;
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +16,11 @@
 }
 
 header {
-    background-color: #3B929C;
+    background-color: var(--cor-principal);
     width: 100%;
     height: 110px;
+    position: fixed;
+    top: 0;
 }
 
 
@@ -31,26 +42,32 @@ ul {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--branco-segundario);
     font-family: Allerta Stencil, sans-serif;
     font-size: 20px;
-    border: 2px solid #ffff;
+    border: 2px solid;
     padding: 10px;
     border-radius: 0px 20px;
 }
 
 a:hover {
-    background-color: #ffff;
-    color: #3B929C;
+    background-color: var(--branco-segundario);
+    color: var(--cor-principal);
 }
 
 .icones {
     padding: 10px 50px;
 }
 
+main {
+    margin-top: 110px;
+}
+
+
+
 .Logo {
     border-radius: 200px;
-    border: #ffff;
+    border: var(--branco-segundario);
     border-style: solid;
 }
 
@@ -67,7 +84,7 @@ a:hover {
     width: 1200px;
     height: 144px;
     border: 2px dashed cadetblue;
-    color: #3B929C;
+    color: var(--cor-principal);
     text-align: center;
     font-size: 25px;
     font-family: Allerta Stencil, sans-serif;
@@ -75,34 +92,49 @@ a:hover {
 }
 
 
-.Area-banenr {
+.Area-banner {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 #reservas__botao {
     padding: 20px 60px;
-    color: #ffff;
-    background-color: #3B929C;
+    color: var(--branco-segundario);
+    background-color: var(--cor-principal);
     font-size: 22 px;
     font-family: Allerta Stencil, sans-serif;
     border-radius: 20px;
     border: none;
 }
 
+#reservas__botao:hover {
+    background-color: #5c39ac;
+    color: var(--branco-segundario);
+
+}
+
+a:focus {
+    background-color: #ffffff;
+    color: var(--cor-principal);
+}
+
+
+
+
 #reservas__titulo {
     margin-top: 15px;
 }
 
 .Sobre__Titulo {
-    color: #3B929C;
+    color: var(--cor-principal);
     font-size: 50px;
     text-align: center;
 }
 
 .Sobre__texto {
-    color: #3B929C;
+    color: var(--cor-principal);
     font-size: 20px;
     font-family: Allerta Stencil, sans-serif;
 }
@@ -124,13 +156,13 @@ a:hover {
 
 
 .Rodape {
-    background-color: #3B929C;
+    background-color: var(--cor-principal);
     height: 130px;
     margin-top: 500px;
 }
 
 .texto__Rodape {
-    color: #ffff;
+    color: var(--branco-segundario);
     margin: auto;
     font-family: Allerta Stencil, sans-serif;
 }
@@ -146,7 +178,7 @@ a:hover {
     display: flex;
     width: 764px;
     height: 40px;
-    border: 5px solid #3B929C;
+    border: 5px solid var(--cor-principal);
     border-radius: 20px;
     padding: 5px;
 }
@@ -163,33 +195,48 @@ a:hover {
     border: none;
     font-size: 30px;
     background: transparent;
-    color: #3B929C;
+    color: var(--cor-principal);
 }
 
 .catalogo__titulo {
     font-size: 50px;
-    color: #3B929C;
+    color: var(--cor-principal);
     margin-bottom: 50px;
 }
 
 .Catalagos {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
-    margin: 100px;
+    gap: 100px;
+    margin: auto;
     width: 1400px;
 }
 
 .Bordado {
     display: flex;
-    justify-content: center;
     margin-top: 190px;
     flex-direction: column;
-    width: 300px;
-    font-size: 40px;
+    width: 400px;
+    font-size: 30px;
 }
 
 .Bordado>a>img {
     border-radius: 40px;
-    width: 300px;
-} 
+    width: 400px;
+}
+
+.texto-imagem {
+    color: rgb(255, 255, 255);
+    background-color: rgb(228, 159, 207);
+    border-radius: 50px;
+    border-style: dotted;
+    text-align: center;
+}
+
+#home {
+    scroll-margin-top: 110px;
+}
+
+#Catalagos {
+    scroll-margin-top: 170px;
+}
