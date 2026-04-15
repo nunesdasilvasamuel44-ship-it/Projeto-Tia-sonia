@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 
 :rooT {
     --cor-principal: #400036;
     --branco-segundario: #b9b9b9;
     --rosa-salmao: #5FCDD9;
     --largura-principal: 1600px;
+    --largura-celular: 430px;
 }
 
 
@@ -25,7 +26,7 @@ header {
 }
 
 
-nav {
+.area-navegacao {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,6 +50,7 @@ ul {
     border: 2px solid;
     padding: 10px;
     border-radius: 0px 20px;
+    padding: 10px 50px;
 }
 
 .icones:hover {
@@ -56,9 +58,6 @@ ul {
     color: var(--cor-principal);
 }
 
-.icones {
-    padding: 10px 50px;
-}
 
 main {
     margin-top: 110px;
@@ -69,6 +68,7 @@ main {
     border-radius: 200px;
     border: var(--branco-segundario);
     border-style: solid;
+
 }
 
 #banner {
@@ -139,9 +139,6 @@ main {
 .Sobre__foto {
     border-radius: 40px;
 }
-
-
-
 
 .Area-sobre {
     display: flex;
@@ -245,4 +242,129 @@ hr {
     width: 1500px;
     font-variant: var(--cor-principal);
     border-color: #400036;
+}
+
+@media (max-width: 430px){
+
+    header {
+        width: 430px;
+        height: 90;
+        top: 0;
+    }
+
+    .area-navegacao {
+        width: 30px;
+        height: 90px;
+        justify-content: center;
+    }
+
+    .Logo {
+        display: none;
+    }
+
+    ul {
+        gap: 0;
+
+    }
+
+    .icones {
+        font-size: 30px;
+        border: none;
+        padding: 20px;
+
+    }
+
+    .icones:hover {
+        background-color: none;
+        color: none;
+
+    }
+
+    .icones:hover,
+    .icones:focus {
+        background-color: none;
+        color: none;
+
+    }
+
+    #banner {
+        width: var(--largura-celular);
+
+    }
+
+    #banner__imagem {
+        width: var(--largura-celular);
+
+    }
+
+    #reservas {
+        width: 350px;
+
+    }
+
+    #reservas__titulo {
+        font-size: 22px;
+    }
+
+    #reservas__botao {
+        padding: 10px 15px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+
+.Area-sobre{
+   display: block;
+   width: var(--largura-celular);     
+}
+
+.Sobre__Titulo{
+font-size: 20px;
+text-align: center;
+}
+
+.Sobre__texto{
+    font-size: 13x;
+
+} 
+
+.Sobre__foto{
+padding: 10;
+width: 390px;
+border-radius: 100px;
+
+}
+
+.Sobre{
+    width: var(--largura-celular);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Catalagos {
+    width: var(--largura-celular);
+}
+
+.area-busca {
+width: var(--largura-celular);
+}
+
+.busca{
+    width: 350px;
+}
+
+.catalogo__titulo{
+font-size: 30px;
+
+}
+
+hr{
+    width: 400px;
+}
+
+
+
+
+
+
 }
