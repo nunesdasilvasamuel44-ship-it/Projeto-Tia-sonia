@@ -1,370 +1,395 @@
     @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 
-:rooT {
-    --cor-principal: #400036;
-    --branco-segundario: #b9b9b9;
-    --rosa-salmao: #5FCDD9;
-    --largura-principal: 1600px;
-    --largura-celular: 430px;
-}
+    :rooT {
+        --cor-principal: #400036;
+        --branco-segundario: #b9b9b9;
+        --rosa-salmao: #5FCDD9;
+        --largura-principal: 1600px;
+        --largura-celular: 420px;
+    }
 
 
 
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Allerta Stencil, sans-serif;
-}
-
-header {
-    background-color: var(--cor-principal);
-    width: 100%;
-    height: 110px;
-    position: fixed;
-    top: 0;
-}
-
-
-.area-navegacao {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 110px;
-    width: 95%;
-    margin: auto;
-}
-
-ul {
-    display: flex;
-    gap: 50px;
-    margin-right: 50px;
-    list-style: none;
-}
-
-.icones {
-    text-decoration: none;
-    color: var(--branco-segundario);
-    font-family: Allerta Stencil, sans-serif;
-    font-size: 20px;
-    border: 2px solid;
-    padding: 10px;
-    border-radius: 0px 20px;
-    padding: 10px 50px;
-}
-
-.icones:hover {
-    background-color: var(--branco-segundario);
-    color: var(--cor-principal);
-}
-
-
-main {
-    margin-top: 110px;
-}
-
-
-.Logo {
-    border-radius: 200px;
-    border: var(--branco-segundario);
-    border-style: solid;
-
-}
-
-#banner {
-    width: var(--largura-principal);
-}
-
-#banner__imagem {
-    width: var(--largura-principal);
-    margin-top: 20px;
-}
-
-#reservas {
-    width: var(--largura-principal);
-    height: 144px;
-    border: 2px dashed cadetblue;
-    color: var(--cor-principal);
-    text-align: center;
-    font-size: 25px;
-    font-family: Allerta Stencil, sans-serif;
-    margin-top: 10px;
-}
-
-
-.Area-banner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-#reservas__botao {
-    padding: 20px 60px;
-    color: var(--branco-segundario);
-    background-color: var(--cor-principal);
-    font-size: 22 px;
-    font-family: Allerta Stencil, sans-serif;
-    border-radius: 20px;
-    border: none;
-}
-
-#reservas__botao:hover {
-    background-color: var(--rosa-salmao);
-    color: black
-}
-
-.icones:focus {
-    background-color: #ffffff;
-    color: var(--cor-principal);
-}
-
-
-#reservas__titulo {
-    margin-top: 15px;
-}
-
-.Sobre__Titulo {
-    color: var(--cor-principal);
-    font-size: 50px;
-    text-align: center;
-}
-
-.Sobre__texto {
-    color: var(--cor-principal);
-    font-size: 20px;
-    font-family: Allerta Stencil, sans-serif;
-}
-
-.Sobre__foto {
-    border-radius: 40px;
-}
-
-.Area-sobre {
-    display: flex;
-    width: var(--largura-principal);
-    margin: 20px auto;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-
-.Rodape {
-    background-color: var(--cor-principal);
-    height: 130px;
-    margin-top: 500px;
-}
-
-.texto__Rodape {
-    color: var(--branco-segundario);
-    margin: auto;
-    font-family: Allerta Stencil, sans-serif;
-}
-
-.area-busca {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-}
-
-.busca {
-    display: flex;
-    width: 764px;
-    height: 40px;
-    border: 5px solid var(--cor-principal);
-    border-radius: 20px;
-    padding: 5px;
-}
-
-.busca__campo {
-    flex: 1;
-    border: none;
-    outline: none;
-    font-size: 20px;
-    font-family: Allerta Stencil, sans-serif;
-}
-
-.busca__botao {
-    border: none;
-    font-size: 30px;
-    background: transparent;
-    color: var(--cor-principal);
-}
-
-.catalogo__titulo {
-    font-size: 50px;
-    color: var(--cor-principal);
-    margin-bottom: 50px;
-}
-
-.Catalagos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    margin: auto;
-    width: 1400px;
-}
-
-.Bordado {
-    display: flex;
-    margin-top: 190px;
-    flex-direction: column;
-    width: 400px;
-    font-size: 30px;
-
-}
-
-.Bordado>a>img {
-    border-radius: 40px;
-    width: 400px;
-
-}
-
-.texto-imagem {
-    color: rgb(255, 255, 255);
-    background-color: rgb(228, 159, 207);
-    border-radius: 50px;
-    border-style: dotted;
-    text-align: center;
-}
-
-#home {
-    scroll-margin-top: 110px;
-}
-
-#Catalagos {
-    scroll-margin-top: 190px;
-}
-
-hr {
-    margin: auto;
-    width: 1500px;
-    font-variant: var(--cor-principal);
-    border-color: #400036;
-}
-
-@media (max-width: 430px){
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Allerta Stencil, sans-serif;
+    }
 
     header {
-        width: 430px;
-        height: 90;
+        background-color: var(--cor-principal);
+        width: 100%;
+        height: 110px;
+        position: fixed;
         top: 0;
     }
 
-    .area-navegacao {
-        width: 30px;
-        height: 90px;
-        justify-content: center;
-    }
 
-    .Logo {
-        display: none;
+    .area-navegacao {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 110px;
+        width: 95%;
+        margin: auto;
     }
 
     ul {
-        gap: 0;
-
+        display: flex;
+        gap: 50px;
+        margin-right: 50px;
+        list-style: none;
     }
 
     .icones {
-        font-size: 30px;
-        border: none;
-        padding: 20px;
-
+        text-decoration: none;
+        color: var(--branco-segundario);
+        font-family: Allerta Stencil, sans-serif;
+        font-size: 20px;
+        border: 2px solid;
+        padding: 10px;
+        border-radius: 0px 20px;
+        padding: 10px 50px;
     }
 
     .icones:hover {
-        background-color: none;
-        color: none;
-
+        background-color: var(--branco-segundario);
+        color: var(--cor-principal);
     }
 
-    .icones:hover,
-    .icones:focus {
-        background-color: none;
-        color: none;
+
+    main {
+        margin-top: 110px;
+    }
+
+
+    .Logo {
+        border-radius: 200px;
+        border: var(--branco-segundario);
+        border-style: solid;
 
     }
 
     #banner {
-        width: var(--largura-celular);
-
+        width: var(--largura-principal);
     }
 
     #banner__imagem {
-        width: var(--largura-celular);
-
+        width: var(--largura-principal);
+        margin-top: 20px;
     }
 
     #reservas {
-        width: 350px;
-
+        width: var(--largura-principal);
+        height: 144px;
+        border: 2px dashed cadetblue;
+        color: var(--cor-principal);
+        text-align: center;
+        font-size: 25px;
+        font-family: Allerta Stencil, sans-serif;
+        margin-top: 10px;
     }
 
-    #reservas__titulo {
-        font-size: 22px;
+
+    .Area-banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
 
     #reservas__botao {
-        padding: 10px 15px;
-        font-size: 18px;
-        border-radius: 5px;
+        padding: 20px 60px;
+        color: var(--branco-segundario);
+        background-color: var(--cor-principal);
+        font-size: 22 px;
+        font-family: Allerta Stencil, sans-serif;
+        border-radius: 20px;
+        border: none;
     }
 
-.Area-sobre{
-   display: block;
-   width: var(--largura-celular);     
-}
+    #reservas__botao:hover {
+        background-color: var(--rosa-salmao);
+        color: black
+    }
 
-.Sobre__Titulo{
-font-size: 20px;
-text-align: center;
-}
-
-.Sobre__texto{
-    font-size: 13x;
-
-} 
-
-.Sobre__foto{
-padding: 10;
-width: 390px;
-border-radius: 100px;
-
-}
-
-.Sobre{
-    width: var(--largura-celular);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Catalagos {
-    width: var(--largura-celular);
-}
-
-.area-busca {
-width: var(--largura-celular);
-}
-
-.busca{
-    width: 350px;
-}
-
-.catalogo__titulo{
-font-size: 30px;
-
-}
-
-hr{
-    width: 400px;
-}
+    .icones:focus {
+        background-color: #ffffff;
+        color: var(--cor-principal);
+    }
 
 
+    #reservas__titulo {
+        margin-top: 15px;
+    }
+
+    .Sobre__Titulo {
+        color: var(--cor-principal);
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .Sobre__texto {
+        width: 500px;
+        color: var(--cor-principal);
+        font-size: 20px;
+        font-family: Allerta Stencil, sans-serif;
+    }
+
+    .Sobre__foto {
+        border-radius: 40px;
+    }
+
+    .Area-sobre {
+        display: flex;
+        width: var(--largura-principal);
+        margin: 20px auto;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+
+    .Rodape {
+        background-color: var(--cor-principal);
+        height: 130px;
+        margin-top: 500px;
+    }
+
+    .texto__Rodape {
+        color: var(--branco-segundario);
+        margin: auto;
+        font-family: Allerta Stencil, sans-serif;
+    }
+
+    .area-busca {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    .busca {
+        display: flex;
+        width: 764px;
+        height: 40px;
+        border: 5px solid var(--cor-principal);
+        border-radius: 20px;
+        padding: 5px;
+    }
+
+    .busca__campo {
+        flex: 1;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        font-family: Allerta Stencil, sans-serif;
+    }
+
+    .busca__botao {
+        border: none;
+        font-size: 30px;
+        background: transparent;
+        color: var(--cor-principal);
+    }
+
+    .catalogo__titulo {
+        font-size: 50px;
+        color: var(--cor-principal);
+        margin-bottom: 50px;
+    }
+
+    .Catalagos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 100px;
+        margin: auto;
+        width: 1400px;
+    }
+
+    .Bordado {
+        display: flex;
+        margin-top: 190px;
+        flex-direction: column;
+        width: 400px;
+        font-size: 30px;
+
+    }
+
+    .Bordado>a>img {
+        border-radius: 40px;
+        width: 400px;
+
+    }
+
+    .texto-imagem {
+        color: rgb(255, 255, 255);
+        background-color: rgb(228, 159, 207);
+        border-radius: 50px;
+        border-style: dotted;
+        text-align: center;
+    }
+
+    #home {
+        scroll-margin-top: 110px;
+    }
+
+    #Catalagos {
+        scroll-margin-top: 190px;
+    }
+
+    hr {
+        margin: auto;
+        width: 1500px;
+        font-variant: var(--cor-principal);
+        border-color: #400036;
+    }
+
+    @media (max-width: 430px) {
+
+        header {
+            width: 430px;
+            height: 10vh;
+            top: 0;
+        }
+
+        .area-navegacao {
+            width: 30px;
+            height: 90px;
+            justify-content: center;
+        }
+
+        .Logo {
+            display: none;
+        }
+
+        ul {
+            gap: 0;
+
+        }
+
+        .icones {
+            font-size: 30px;
+            border: none;
+            padding: 20px;
+
+        }
+
+        .icones:hover {
+            background-color: none;
+            color: none;
+
+        }
+
+        .icones:hover,
+        .icones:focus {
+            background-color: none;
+            color: none;
+
+        }
+
+        #banner {
+            width: var(--largura-celular);
+
+        }
+
+        #banner__imagem {
+            width: var(--largura-celular);
+
+        }
+
+        #reservas {
+            width: 350px;
+
+        }
+
+        #reservas__titulo {
+            font-size: 22px;
+        }
+
+        #reservas__botao {
+            padding: 10px 15px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .Area-sobre {
+            display: block;
+            width: var(--largura-celular);
+        }
+
+        .Sobre__Titulo {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .Sobre__texto {
+            font-size: 10x;
+            width: var(--largura-celular);
+        }
+
+        .Sobre__foto {
+            padding: 10;
+            width: 390px;
+            border-radius: 100px;
+
+        }
+
+        .Sobre {
+            width: var(--largura-celular);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .Catalagos {
+            width: var(--largura-celular);
+            gap: 5;
+            margin: 40px 0 0 0;
+            display: flex;
+            align-content: space-evenly;
+            height: 65vh;
+        }
+
+        .area-busca {
+            width: var(--largura-celular);
+        }
+
+        .busca {
+            width: 330px;
+        }
+
+        .catalogo__titulo {
+            font-size: 30px;
+
+        }
+
+        hr {
+            width: 400px;
+        }
+
+        .Bordado {
+            font-size: 15px;
+            width: 100px;
+            margin: 5px;
+
+        }
+
+        .texto-imagem {
+            border-radius: 30px;
+            border: 20px;
+            text-align: center;
+        }
+
+
+
+        .Bordado>a>img {
+            width: 170px;
+            border-radius: 10px;
+        }
 
 
 
 
-}
+
+    }
