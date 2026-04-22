@@ -4,51 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
     <title>Cadastro</title>
 </head>
 
 <body>
 
-    <main>
+    <main class="area-cadastro">
 
-        <section>
+        <section class="area-titulo">
             <h1>Cadastro de Usuario</h1>
         </section>
 
-        <section>
-            <form action="#">
+        <section class="area-formulario">
+            <form action="#" class="forma-cadastro">
 
                 <div class="area-nome">
                     <div class="priemeiro-nome">
-                        <label for="nome">nome</label>
-                        <input type="text" id="nome" required>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" placeholder="Digite seu nome" required>
                     </div>
-
-                </div>
 
                 <div class="ultimo-nome">
-                    <label for="sobrenome">sobrenome</label>
-                    <input type="text" id="sobrenome">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" placeholder="Digite seu sobrenome">
+                </div>
 
-                    </div>
-
-                    <div>
-                        <button type="submit">cadastrar</button>
+            </div>
 
 
-                    </div>
+        <div class="area-acesso">
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="text" id="sobrenome" placeholder="Digite seu Email">
+            </div>
+        
 
+            <div class="senha">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="☼☼☼☼☼☼☼☼☼☼" required>
 
+            </div>
+            
 
+        </div>
+            <div class="area-contato">
+                <label for="ddd">ddd</label>
+                <input type="number" max="99" id="ddd" placeholder="ddd" required>
 
+            </div>
 
+            <div class="telefone">
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" placeholder="Digite seu telefone" required>
+
+            </div>
+
+            <div class="area-endereco">
+                <div class="endereco"><label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" placeholder="Digite seu endereço" required>
                 </div>
 
 
-            </form>
-        </section>
+            </div>
 
+            <div class="numero">
+                <label for="numero">Numero</label>
+                <input type="number" id="numero" placeholder="000">
+            </div>
+
+            <div class="cidade">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" placeholder="cidade">
+
+            </div>
+
+            <div class="cep">
+                <label for="cep">Cep</label>
+                <input type="text" id="cep" placeholder="00000-000">
+
+            </div>
+
+
+            <div class="area-dados">
+                <div class="nacimento">
+                    <label for="data-nacimento">data de nacimento</label>
+                    <input type="date" id="data-nacimento" required>
+
+                </div>
+                </div>
+                <div class="genero">
+                    <label for="genero">genero</label>
+                    <select id="genero">
+                        <option value="#" disabled selected>Selecione seu genero</option>
+                        <option value="#">Femenino</option>
+                        <option value="#">Masculino</option>
+                        <option value="#">Outro</option>
+                        <option value="#">Prefiro nao responde</option>
+                    </select>
+                </div>
+
+
+                <div class="area-botao">
+                    <button type="submit" id="botao-cadastrar">cadastrar</button>
+                    <a href="#" class="link-login" > ja possui uma Conta? acesse agora!</a>
+                </div>
+                
+            </form>
+            </section>
+ 
+
+            </div>
+
+
+
+
+
+
+
+           
+        
+
+        </div>
 
 
 
