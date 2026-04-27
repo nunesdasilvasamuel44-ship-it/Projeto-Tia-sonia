@@ -8,14 +8,17 @@
 }
 
 .area-cadastro {
-    background-color: rgb(154, 154, 221);
-
-    margin: 50px auto;
+    background-color: #400036;
+    color: aliceblue;
+    margin: 150px auto;
     width: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 20px;
 }
 
 .area-formulario {
@@ -25,50 +28,38 @@
 
 }
 
+.area-endereco {
+    display: block;
+}
 
-
-.forma-cadastro>div {
+.area-formulario>div {
     display: flex;
-    gap: 30px;
-    width: 50vw;
+    gap: 50px;
+
 }
 
-.ddd input {
-    width: 4vw;
-}
-
-
-#numero {
-    width: 4vw;
-}
-
-.formatacao div {
+div {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    flex: 1;
 }
 
-#ddd,
-#numero {
-    width: 4vw;
-}
+
 
 input,
 select {
-    width: 100%;
     padding: 7px 0;
     margin-bottom: 8px;
 }
 
-.area-botao{
-margin-top: 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
+.area-botao {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
 
-} 
-
-#botao-cadastrar{
+#botao-cadastrar {
     width: 50%;
     padding: 10px;
     border: none;
@@ -76,6 +67,94 @@ align-items: center;
     font-size: 1.1rem;
 }
 
-.link-login{
-    margin-top: -25px;
-} 
+.titulo-campo {
+    flex-direction: column;
+
+}
+
+.formatacao {
+    gap: 1rem;
+}
+
+form {
+    width: 50vw;
+}
+
+.ddd,
+.numero {
+    width: 100px;
+
+}
+
+.cep {
+    width: 200px;
+}
+
+input,
+select {
+    padding: 8px;
+    border-radius: 7px;
+    border: none;
+    font-size: 1.1rem;
+}
+
+@media(max-width: 430px) {
+
+    .area-cadastro {
+        margin-top: 8vh;
+        width: 100vw;
+        background: transparent;
+        color: var(--cor-principal);
+    }
+
+    form {
+        width: 85wv;
+    }
+
+    .formatacao {
+        flex-direction: column;
+    }
+
+    .area-contato,
+    .endereo-numero,
+    .cidade-cep{
+        flex-direction: row;
+    }
+
+
+    input,
+    select {
+        border: 2px solid var(--cor-principal);
+    }
+
+    .cep{
+        width: 30vw;
+    }
+
+    #botao-cadastrar{
+        background-color: var(--cor-principal);
+        color: white;
+    }
+
+    .link-login{
+        color: var(--cor-principal);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
