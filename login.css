@@ -1,0 +1,71 @@
+
+@import url(style.css);
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.logo{
+    width: 150px;
+    border-radius: 50px;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.area-cadastro {
+    background-color: #fdc5f9;
+    color: rgb(0, 0, 0);
+    margin: 300px auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+.area-titulo {
+    margin-right: 350px;
+    font-size: 20px;
+}
+
+.area-login {
+    display: flex;
+    flex-direction: column;
+}
+
+
+input {
+    width: 500px;
+    padding: 10px;
+    border-radius: 60px;
+}
+
+.senha {
+    margin-top: 40px;
+}
+
+
+.area-botao {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#botao-entrar {
+    padding: 20px;
+    width: 180px;
+    border-radius: 50px;
+}
+
