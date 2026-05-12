@@ -17,6 +17,13 @@
         font-family: Allerta Stencil, sans-serif;
     }
 
+
+.acesso-negado{
+    background-color: red;
+
+}
+
+
     header {
         background-color: var(--cor-principal);
         width: 100%;
