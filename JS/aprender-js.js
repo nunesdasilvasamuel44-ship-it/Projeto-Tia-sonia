@@ -28,7 +28,7 @@ if(nomeDigitado=== nomeUsuario1 && senhaDigitado === senha1)
 
     document.body.classList.add("acesso-negado")
 
-    document.getElementById("bannner__imagem").src= "img/acesso-negado-img"
+    document.getElementById("banner__imagem").src= "imagem/acesso-negado-img.png"
 }
 
 

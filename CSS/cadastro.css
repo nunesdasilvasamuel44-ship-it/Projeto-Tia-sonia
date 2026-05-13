@@ -98,6 +98,29 @@ select {
     font-size: 1.1rem;
 }
 
+
+.erro-input{
+    border: 2px solid rgb(207, 70, 70) !important;
+    background-color: #ffe6e6;
+}
+
+.sucesso-input{
+    border: 2px solid #00cc66 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 430px) {
 
     .area-cadastro {
