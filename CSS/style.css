@@ -212,9 +212,9 @@
         gap: 100px;
         margin: auto;
         width: 1400px;
-    }
+    }   
 
-    .Bordado {
+    .bordados {
         display: flex;
         margin-top: 190px;
         flex-direction: column;
@@ -223,7 +223,7 @@
 
     }
 
-    .Bordado>a>img {
+    .bordados>a>img {
         border-radius: 40px;
         width: 400px;
 
