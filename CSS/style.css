@@ -25,11 +25,12 @@
 
 
     header {
-        background-color: var(--cor-principal);
+        background-color: #0D0D0D;
         width: 100%;
         height: 110px;
         position: fixed;
         top: 0;
+        z-index: 10;
     }
 
 
@@ -80,18 +81,18 @@
 
     #banner {
         width: var(--largura-principal);
+        border: 90px;
     }
 
     #banner__imagem {
-        width: var(--largura-principal);
+        width: 1600px;
         margin-top: 20px;
+        border: 50px;
     }
 
     #reservas {
         width: var(--largura-principal);
         height: 144px;
-        border: 2px dashed cadetblue;
-        color: var(--cor-principal);
         text-align: center;
         font-size: 25px;
         font-family: Allerta Stencil, sans-serif;
@@ -107,23 +108,23 @@
     }
 
     #reservas__botao {
-        padding: 20px 60px;
-        color: var(--branco-segundario);
-        background-color: var(--cor-principal);
-        font-size: 22 px;
+        padding: 20px 140px;
+        color: #F5F5F5;
+        background-color: #0D0D0D;
+        font-size: 44 px;
         font-family: Allerta Stencil, sans-serif;
         border-radius: 20px;
         border: none;
     }
 
     #reservas__botao:hover {
-        background-color: var(--rosa-salmao);
+        background-color: #C9A227;
         color: black
     }
 
     .icones:focus {
         background-color: #ffffff;
-        color: var(--cor-principal);
+        color: #8B6B1F;
     }
 
 
@@ -158,7 +159,7 @@
 
 
     .Rodape {
-        background-color: var(--cor-principal);
+        background-color:  #0D0D0D;
         height: 130px;
         margin-top: 500px;
     }
