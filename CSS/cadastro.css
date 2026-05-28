@@ -1,6 +1,7 @@
 @import url(style.css);
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +9,8 @@
 }
 
 .area-cadastro {
-    background-color: #400036;
-    color: aliceblue;
+    background-color: #0D0D0D;
+    color: #F5F5F5;
     margin: 150px auto;
     width: 60vw;
     display: flex;

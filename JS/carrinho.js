@@ -36,3 +36,8 @@ botoesBordados.forEach(function(botao){
             botao.classList.replace('btn-success', 'btn-primary')}, 2000)
         })
 })
+
+
+
+
+
