@@ -47,7 +47,7 @@ if (!usuarioLogado) {
         textoTotal.innerText = 'Total: R$' + valorTotal
         textoPedindoPorEmail += '\nValor Total: R$ ' + valorTotal
 
-    }
+    
 }
 
 
@@ -74,6 +74,26 @@ if (!usuarioLogado) {
 
             return
 
-
-
     }
+
+    btnFinalizar.innerText = 'Preparando pedido...'
+    btnFinalizar.classList.replace('btn-sucesso', 'btn-secondary')
+
+    const cliente = JSON.parse(usuarioLogado)
+    textoPedidoPorEmail += '\n\nDados do  cliente:\nNome' + cliente.nome + '\nE-mail:' + cliente.telefone
+
+    const emailTiasonia = 'seu@email.com'
+    const assunto = 'Novo pedido de ' + cliente.nome
+
+    const LinkEmail = 'https://mail.google.com/mail/?view=cm&fs=${emailTiasonia}&su=${encodeURIComponent(assunto))&body=${encodeURIComponet(textoPedidoporEmail)}'
+
+    window.open(linkGmail, 'blank')
+
+    localStorage.removeItem('itemCarrinho')
+
+    setTimeout(() => {
+        window.location.href = 'index.html'
+    }, 1500)
+    })
+}
+
