@@ -49,3 +49,31 @@ if (!usuarioLogado) {
 
     }
 }
+
+
+
+    //Ffinalizar o pedido email
+    const btnFinalizar = document.getElementById('btn-finalizar')
+
+    btnFinalizar.addEventListener('click', function(){
+
+        event.preventDefault()
+
+        if(carrinho.length === 0){
+            const textOriginal = btnFinalizar.innerText
+            btnFinalizar.innerText = 'O carrinho está vazio!'
+            btnFinalizar.classList.replace('btn-sucesso', 'btn-dnager')
+            
+            setTimeout(() => {
+                btnFinalizar.innerText = textOriginal
+                btnFinalizar.classList.replace('btn-danger', 'btn-sucess')
+
+
+            }, 2500)
+
+
+            return
+
+
+
+    }
